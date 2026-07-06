@@ -1,0 +1,250 @@
+[
+  {
+    "eng": "sophisiticated",
+    "kor": "정교한, 복잡합, 세련된"
+  },
+  {
+    "eng": "sophisitication",
+    "kor": "정교함"
+  },
+  {
+    "eng": "complex",
+    "kor": "복잡한"
+  },
+  {
+    "eng": "refined",
+    "kor": "세련된"
+  },
+  {
+    "eng": "timely",
+    "kor": "시기적절한, 때를 맞춘"
+  },
+  {
+    "eng": "in a timely manner",
+    "kor": "때맞춰"
+  },
+  {
+    "eng": "realistically",
+    "kor": "현실적으로"
+  },
+  {
+    "eng": "realistic",
+    "kor": "현실적인"
+  },
+  {
+    "eng": "realism",
+    "kor": "현실주의"
+  },
+  {
+    "eng": "cannot realistically expect ~",
+    "kor": "현실적으로 ~을 기대하기 어렵다"
+  },
+  {
+    "eng": "promptly",
+    "kor": "즉시, 정각에"
+  },
+  {
+    "eng": "prompt",
+    "kor": "신속한, 즉각적인, 촉발하다, 유도하다"
+  },
+  {
+    "eng": "instantly",
+    "kor": "즉시, 즉각적으로"
+  },
+  {
+    "eng": "abruptly",
+    "kor": "갑자기"
+  },
+  {
+    "eng": "make A accessible to B",
+    "kor": "B가 A를 이용할 수 있게 하다"
+  },
+  {
+    "eng": "accessible by ~",
+    "kor": "~로 갈 수 있는"
+  },
+  {
+    "eng": "implement",
+    "kor": "실시하다, 실행하다"
+  },
+  {
+    "eng": "implementation",
+    "kor": "실행"
+  },
+  {
+    "eng": "execute",
+    "kor": "실행하다"
+  },
+  {
+    "eng": "implement a plan",
+    "kor": "계획을 실행하다"
+  },
+  {
+    "eng": "implement measures",
+    "kor": "조치를 취하다"
+  },
+  {
+    "eng": "feedback",
+    "kor": "의견, 반응"
+  },
+  {
+    "eng": "outstanding",
+    "kor": "우수한, 뛰어난, 미지불된"
+  },
+  {
+    "eng": "overdue",
+    "kor": "연체된, 미납의"
+  },
+  {
+    "eng": "unpaid",
+    "kor": "연체된, 미납의"
+  },
+  {
+    "eng": "information",
+    "kor": "정보, 자료"
+  },
+  {
+    "eng": "informative",
+    "kor": "정보를 제공하는, 유익한"
+  },
+  {
+    "eng": "replacement",
+    "kor": "교체, 대체, 후임자, 교환품"
+  },
+  {
+    "eng": "announce",
+    "kor": "알리다"
+  },
+  {
+    "eng": "announcement",
+    "kor": "공고, 발표"
+  },
+  {
+    "eng": "department",
+    "kor": "부서"
+  },
+  {
+    "eng": "permanently",
+    "kor": "영구적으로, 불변으로"
+  },
+  {
+    "eng": "indefinitely",
+    "kor": "무기한으로"
+  },
+  {
+    "eng": "fulfillment",
+    "kor": "성취, 달성, 이행"
+  },
+  {
+    "eng": "outline",
+    "kor": "개요, 설명하다, 약술하다"
+  },
+  {
+    "eng": "explain",
+    "kor": "설명하다"
+  },
+  {
+    "eng": "explanation",
+    "kor": "설명, 해명, 이유"
+  },
+  {
+    "eng": "contain",
+    "kor": "포함하다, 담다"
+  },
+  {
+    "eng": "include",
+    "kor": "포함하다"
+  },
+  {
+    "eng": "compile",
+    "kor": "편집하다, 모으다"
+  },
+  {
+    "eng": "subsequent",
+    "kor": "차후의, 그 다음의"
+  },
+  {
+    "eng": "sebsequent to",
+    "kor": "~이후에, ~다음에"
+  },
+  {
+    "eng": "overview",
+    "kor": "개요, 개관"
+  },
+  {
+    "eng": "provider",
+    "kor": "공급자, 제공자"
+  },
+  {
+    "eng": "expertise",
+    "kor": "전문 지식, 전문 기술"
+  },
+  {
+    "eng": "expert",
+    "kor": "전문가, 전문적인"
+  },
+  {
+    "eng": "have expertise in A",
+    "kor": "A에 전문성이 있다"
+  },
+  {
+    "eng": "area of expertise",
+    "kor": "전문 분야"
+  },
+  {
+    "eng": "demonstrate",
+    "kor": "증명하다, 입증하다, 설명하다, 보여주다"
+  },
+  {
+    "eng": "demonstration",
+    "kor": "증명, 시연, 설명, 드러냄"
+  },
+  {
+    "eng": "prove",
+    "kor": "증명하다, 설명하다"
+  },
+  {
+    "eng": "display",
+    "kor": "전시, 진열, 전시하다, 진열하다"
+  },
+  {
+    "eng": "remainder",
+    "kor": "나머지, 나머지 사람들, 잔여"
+  },
+  {
+    "eng": "remain",
+    "kor": "남다, 여전히 ~이다, 계속 ~한 상태이다, 아직 ~해야 한다"
+  },
+  {
+    "eng": "remaining",
+    "kor": "남은, 남아 있는"
+  },
+  {
+    "eng": "balance",
+    "kor": "잔액"
+  },
+  {
+    "eng": "essential",
+    "kor": "필수적인, 극히 중요한, 본질적인"
+  },
+  {
+    "eng": "be essential to/for",
+    "kor": "~에 있어서 필수적이다"
+  },
+  {
+    "eng": "dividend",
+    "kor": "배당금"
+  },
+  {
+    "eng": "break up",
+    "kor": "~을 분리하다"
+  },
+  {
+    "eng": "divide A into B",
+    "kor": "A를 B로 나누다"
+  },
+  {
+    "eng": "be divided into",
+    "kor": "~로 나눠지다"
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "eng": "a certificate of attendance",
+    "kor": "수료증"
+  },
+  {
+    "eng": "absolutely",
+    "kor": "절대적으로, 완전히"
+  },
+  {
+    "eng": "absolute",
+    "kor": "완전한, 절대적인"
+  },
+  {
+    "eng": "delegate",
+    "kor": "위임하다, 대표"
+  },
+  {
+    "eng": "delegation",
+    "kor": "대표단, 위임"
+  },
+  {
+    "eng": "attentively",
+    "kor": "주의 깊게, 조심스럽게"
+  },
+  {
+    "eng": "supervision",
+    "kor": "감독"
+  },
+  {
+    "eng": "supervise",
+    "kor": "감독하다, 감시하다, 검토하다, 지도하다"
+  },
+  {
+    "eng": "supervisor",
+    "kor": "감독관"
+  },
+  {
+    "eng": "workshop",
+    "kor": "워크숍, 연수"
+  },
+  {
+    "eng": "draw",
+    "kor": "끌다, 끌어당기다"
+  },
+  {
+    "eng": "revised",
+    "kor": "개정된, 수정된, 변경한"
+  },
+  {
+    "eng": "make a revision",
+    "kor": "수정하다"
+  },
+  {
+    "eng": "revised edition",
+    "kor": "개정판"
+  },
+  {
+    "eng": "revised policy",
+    "kor": "개정된 정책"
+  },
+  {
+    "eng": "reluctantly",
+    "kor": "마지못해, 꺼려하여"
+  },
+  {
+    "eng": "acquaint",
+    "kor": "~에게 숙지시키다, 잘 알게 하다"
+  },
+  {
+    "eng": "acquaintance",
+    "kor": "지인"
+  },
+  {
+    "eng": "acquaint A with B",
+    "kor": "A에게 B를 숙지시키다"
+  },
+  {
+    "eng": "convey",
+    "kor": "전달하다"
+  },
+  {
+    "eng": "conveyor",
+    "kor": "운반인, 전달자"
+  },
+  {
+    "eng": "convey A to B",
+    "kor": "A를 B에게 전달하다"
+  },
+  {
+    "eng": "check",
+    "kor": "검사하다, 조사하다, 확인하다"
+  },
+  {
+    "eng": "examine",
+    "kor": "검사하다, 조사하다"
+  },
+  {
+    "eng": "check A for B",
+    "kor": "B의 유무를 확인하기 위해 A를 검사하다"
+  },
+  {
+    "eng": "check for A",
+    "kor": "A를 확인하다"
+  },
+  {
+    "eng": "headquarters",
+    "kor": "본부"
+  },
+  {
+    "eng": "file",
+    "kor": "정리하다, 철하다, 정식으로 제기하다, 제출하다"
+  },
+  {
+    "eng": "file a claim",
+    "kor": "청구하다"
+  },
+  {
+    "eng": "oversee",
+    "kor": "감독하다"
+  },
+  {
+    "eng": "involved",
+    "kor": "관여하는, 관계된, 연루된"
+  },
+  {
+    "eng": "involvement",
+    "kor": "관련, 연류"
+  },
+  {
+    "eng": "be involved in",
+    "kor": "~에 관여하다"
+  },
+  {
+    "eng": "concentrate",
+    "kor": "집중하다, 집중시키다"
+  },
+  {
+    "eng": "concentration",
+    "kor": "집중"
+  },
+  {
+    "eng": "concentrated",
+    "kor": "집중된"
+  },
+  {
+    "eng": "concentrate on",
+    "kor": "~에 집중하다"
+  },
+  {
+    "eng": "concentrate A on B",
+    "kor": "A를 B에 집중시키다"
+  },
+  {
+    "eng": "a sheet of",
+    "kor": "~ 한장"
+  },
+  {
+    "eng": "business card",
+    "kor": "명함"
+  },
+  {
+    "eng": "cartridge",
+    "kor": "잉크 카트리지"
+  },
+  {
+    "eng": "daily",
+    "kor": "매일의, 날마다, 매일"
+  },
+  {
+    "eng": "edit",
+    "kor": "편집하다, 수정하다"
+  },
+  {
+    "eng": "hand",
+    "kor": "손, 건네주다"
+  },
+  {
+    "eng": "in order to do",
+    "kor": "~하기 위해서"
+  },
+  {
+    "eng": "laptop",
+    "kor": "휴대용 컴퓨터"
+  },
+  {
+    "eng": "name tag",
+    "kor": "명찰, 명패"
+  },
+  {
+    "eng": "on vacation",
+    "kor": "휴가 중인"
+  },
+  {
+    "eng": "paper jam",
+    "kor": "종이 걸림"
+  },
+  {
+    "eng": "paperwork",
+    "kor": "문서작업"
+  },
+  {
+    "eng": "partition",
+    "kor": "칸막이, 분할"
+  },
+  {
+    "eng": "rush hour",
+    "kor": "교통 혼잡 시간"
+  },
+  {
+    "eng": "section",
+    "kor": "부분, 구역"
+  },
+  {
+    "eng": "sheet",
+    "kor": "시트, 종이"
+  },
+  {
+    "eng": "tabletop",
+    "kor": "테이블 윗면"
+  },
+  {
+    "eng": "telephone call",
+    "kor": "전화 통화"
+  },
+  {
+    "eng": "trash bin",
+    "kor": "쓰레기통"
+  },
+  {
+    "eng": "upstairs",
+    "kor": "위층의, 위층으로, 위층에"
+  },
+  {
+    "eng": "as if",
+    "kor": "마치 ~인 듯이"
+  },
+  {
+    "eng": "as well as",
+    "kor": "~에 더하여, 게다가"
+  },
+  {
+    "eng": "be aware of",
+    "kor": "~을 알고 있다"
+  },
+  {
+    "eng": "be known as",
+    "kor": "~으로 알려져 있다"
+  },
+  {
+    "eng": "be likely to",
+    "kor": "~할 가능성이 있다"
+  },
+  {
+    "eng": "detail",
+    "kor": "세부 사항"
+  },
+  {
+    "eng": "offering",
+    "kor": "제공된 것"
+  },
+  {
+    "eng": "on one's own",
+    "kor": "혼자서, 혼자 힘으로"
+  }
+]

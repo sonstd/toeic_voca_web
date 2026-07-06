@@ -1,0 +1,278 @@
+[
+  {
+    "eng": "equipment",
+    "kor": "장비, 설비"
+  },
+  {
+    "eng": "equip",
+    "kor": "~을 갖추다"
+  },
+  {
+    "eng": "office equipment",
+    "kor": "사무용 비품"
+  },
+  {
+    "eng": "automate",
+    "kor": "자동화하다"
+  },
+  {
+    "eng": "automation",
+    "kor": "자동화"
+  },
+  {
+    "eng": "automatic",
+    "kor": "자동의"
+  },
+  {
+    "eng": "specify",
+    "kor": "~을 명확히 말하다, 명시하다"
+  },
+  {
+    "eng": "specific",
+    "kor": "명확한, 구체적인, 특정한"
+  },
+  {
+    "eng": "properly",
+    "kor": "제대로, 정확하게, 적절히"
+  },
+  {
+    "eng": "proper",
+    "kor": "적당한, 적절한"
+  },
+  {
+    "eng": "operate properly",
+    "kor": "제대로 작동하다"
+  },
+  {
+    "eng": "safety",
+    "kor": "안전"
+  },
+  {
+    "eng": "safe",
+    "kor": "안전한"
+  },
+  {
+    "eng": "safely",
+    "kor": "안전하게"
+  },
+  {
+    "eng": "precaution",
+    "kor": "예방 조치, 예방책"
+  },
+  {
+    "eng": "precautious",
+    "kor": "조심하는"
+  },
+  {
+    "eng": "safeguard",
+    "kor": "예방책"
+  },
+  {
+    "eng": "operate",
+    "kor": "작동하다, 움직이다"
+  },
+  {
+    "eng": "operation",
+    "kor": "작동, 운전"
+  },
+  {
+    "eng": "operational",
+    "kor": "작동하는"
+  },
+  {
+    "eng": "operable",
+    "kor": "사용할 수 있는, 수술 가능한"
+  },
+  {
+    "eng": "processing",
+    "kor": "가공, 처리"
+  },
+  {
+    "eng": "process",
+    "kor": "가공 처리하다, 절차, 공정, 과정, 처리하다, 진행"
+  },
+  {
+    "eng": "capacity",
+    "kor": "용량, 수용력, 역할"
+  },
+  {
+    "eng": "capacious",
+    "kor": "용량이 큰"
+  },
+  {
+    "eng": "role",
+    "kor": "역할, 임무"
+  },
+  {
+    "eng": "be filled to capacity",
+    "kor": "가득 차 있다"
+  },
+  {
+    "eng": "expand the capacity",
+    "kor": "용량을 늘리다"
+  },
+  {
+    "eng": "limited capacity",
+    "kor": "용량 제한, 유한의, 한계치가 있는"
+  },
+  {
+    "eng": "storage capacity",
+    "kor": "저장 용량"
+  },
+  {
+    "eng": "assemble",
+    "kor": "조립하다, 모으다"
+  },
+  {
+    "eng": "assembly",
+    "kor": "조립, 조립품, 집회"
+  },
+  {
+    "eng": "build",
+    "kor": "조립하다, 모으다"
+  },
+  {
+    "eng": "call together",
+    "kor": "소집하다"
+  },
+  {
+    "eng": "disassemble",
+    "kor": "분해하다"
+  },
+  {
+    "eng": "assembly line",
+    "kor": "조립 라인"
+  },
+  {
+    "eng": "assembly plant",
+    "kor": "조립 공장"
+  },
+  {
+    "eng": "utilize",
+    "kor": "이용하다, 활용하다"
+  },
+  {
+    "eng": "utilization",
+    "kor": "이용"
+  },
+  {
+    "eng": "use",
+    "kor": "이용하다"
+  },
+  {
+    "eng": "place",
+    "kor": "~한 상태에 두다, (지시, 주문, 신청 등을) 하다"
+  },
+  {
+    "eng": "placement",
+    "kor": "배치"
+  },
+  {
+    "eng": "leave",
+    "kor": "~한 상태로 놓아두다"
+  },
+  {
+    "eng": "put",
+    "kor": "놓다"
+  },
+  {
+    "eng": "place A on standby",
+    "kor": "A를 대기 상태로 두다"
+  },
+  {
+    "eng": "fill",
+    "kor": "~을 채우다, 이행하다"
+  },
+  {
+    "eng": "empty",
+    "kor": "~을 비우다, 텅 빈"
+  },
+  {
+    "eng": "fill A with B",
+    "kor": "A를 B로 채우다"
+  },
+  {
+    "eng": "fill an order",
+    "kor": "주문에 응하다"
+  },
+  {
+    "eng": "fill the position",
+    "kor": "공석을 채우다"
+  },
+  {
+    "eng": "manufacturing",
+    "kor": "제조의, 제조"
+  },
+  {
+    "eng": "renovate",
+    "kor": "개조하다, 수리하다, 보수하다"
+  },
+  {
+    "eng": "decision",
+    "kor": "결정, 판단"
+  },
+  {
+    "eng": "make a decision about",
+    "kor": "~에 대해 결정을 내리다"
+  },
+  {
+    "eng": "material",
+    "kor": "재료, 물질"
+  },
+  {
+    "eng": "substance",
+    "kor": "물질, 실질"
+  },
+  {
+    "eng": "ingredient",
+    "kor": "재료, 성분"
+  },
+  {
+    "eng": "attribute",
+    "kor": "~의 덕분으로 돌리다"
+  },
+  {
+    "eng": "attribute A to B",
+    "kor": "A를 B 덕분으로 돌리다"
+  },
+  {
+    "eng": "A is attributed to B",
+    "kor": "A는 B 덕분이다"
+  },
+  {
+    "eng": "ascribe",
+    "kor": "~에 돌리다"
+  },
+  {
+    "eng": "effectiveness",
+    "kor": "효율성"
+  },
+  {
+    "eng": "inefficiency",
+    "kor": "비능률"
+  },
+  {
+    "eng": "office efficiency",
+    "kor": "사무 효율성"
+  },
+  {
+    "eng": "energy efficiency",
+    "kor": "에너지 효율성"
+  },
+  {
+    "eng": "limitation",
+    "kor": "제약"
+  },
+  {
+    "eng": "tailored",
+    "kor": "맞춤의, 주문에 따라 맞춘"
+  },
+  {
+    "eng": "tailor",
+    "kor": "짓다, 맞추다"
+  },
+  {
+    "eng": "component",
+    "kor": "부품, 요소"
+  }
+]

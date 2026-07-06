@@ -1,0 +1,294 @@
+[
+  {
+    "eng": "accustomed",
+    "kor": "익숙한"
+  },
+  {
+    "eng": "be accustomed to -ing",
+    "kor": "~하는데 익숙하다"
+  },
+  {
+    "eng": "corporation",
+    "kor": "주식회사, 법인"
+  },
+  {
+    "eng": "corporate",
+    "kor": "법인의, 회사의"
+  },
+  {
+    "eng": "demanding",
+    "kor": "요구가 많은, 요구가 지나친, 힘든"
+  },
+  {
+    "eng": "demand",
+    "kor": "수요, 요구하다"
+  },
+  {
+    "eng": "colleague",
+    "kor": "동료"
+  },
+  {
+    "eng": "coworker",
+    "kor": "동료, 협력자"
+  },
+  {
+    "eng": "peer",
+    "kor": "동료"
+  },
+  {
+    "eng": "division",
+    "kor": "부서, 분할"
+  },
+  {
+    "eng": "divide",
+    "kor": "나누다, 분배하다"
+  },
+  {
+    "eng": "category",
+    "kor": "부문"
+  },
+  {
+    "eng": "compartment",
+    "kor": "구획, 칸막이"
+  },
+  {
+    "eng": "request",
+    "kor": "요청, 요청하다"
+  },
+  {
+    "eng": "commision",
+    "kor": "의뢰하다, 주문하다"
+  },
+  {
+    "eng": "upon request",
+    "kor": "요청 시에"
+  },
+  {
+    "eng": "request for",
+    "kor": "~에 대한 요청"
+  },
+  {
+    "eng": "be requested to do",
+    "kor": "~하도록 요청받다, ~하시기 바랍니다"
+  },
+  {
+    "eng": "efficiently",
+    "kor": "효율적으로, 능률적으로"
+  },
+  {
+    "eng": "efficient",
+    "kor": "효율적인, 효과적인, 능률적인"
+  },
+  {
+    "eng": "efficiency",
+    "kor": "효율, 능률"
+  },
+  {
+    "eng": "management",
+    "kor": "경영, 경영진"
+  },
+  {
+    "eng": "manageable",
+    "kor": "관리할 수 있는"
+  },
+  {
+    "eng": "handle",
+    "kor": "처리하다, 다루다, 취급하다"
+  },
+  {
+    "eng": "succeed",
+    "kor": "성공하다, 뒤를 잇다"
+  },
+  {
+    "eng": "manage to do",
+    "kor": "가까스로 ~하다, 그럭저럭 ~해내다"
+  },
+  {
+    "eng": "under the new management",
+    "kor": "새로운 경영진 하에"
+  },
+  {
+    "eng": "submit",
+    "kor": "제출하다"
+  },
+  {
+    "eng": "submission",
+    "kor": "제출, 제출물"
+  },
+  {
+    "eng": "turn in",
+    "kor": "제출하다"
+  },
+  {
+    "eng": "hand in",
+    "kor": "제출하다"
+  },
+  {
+    "eng": "submit A to B",
+    "kor": "A를 B에게 제출하다"
+  },
+  {
+    "eng": "directly",
+    "kor": "곧바로, 곧장"
+  },
+  {
+    "eng": "direct",
+    "kor": "지도하다, 직접적인, ~에게 길을 안내하다, 가르쳐주다, 직행의, 안내하다"
+  },
+  {
+    "eng": "direction",
+    "kor": "방향, 지시, 지도, 지침, 설명, 감독"
+  },
+  {
+    "eng": "remind",
+    "kor": "~에게 상기시키다, 일깨우다"
+  },
+  {
+    "eng": "reminder",
+    "kor": "상기시켜 주는 것, 메모"
+  },
+  {
+    "eng": "remind 사람 + of내용/that절",
+    "kor": "~에게 ~을 상기시키다"
+  },
+  {
+    "eng": "remind 사람 to do",
+    "kor": "~에게 ~하라고 일러주다"
+  },
+  {
+    "eng": "be reminded to do",
+    "kor": "~할 것을 잊지 않도록 주의 받다"
+  },
+  {
+    "eng": "instruct",
+    "kor": "지시하다, 가르치다"
+  },
+  {
+    "eng": "instruction",
+    "kor": "지시, 설명"
+  },
+  {
+    "eng": "instructor",
+    "kor": "강사"
+  },
+  {
+    "eng": "deadline",
+    "kor": "마감일, 마감 시간"
+  },
+  {
+    "eng": "sample",
+    "kor": "견본, 샘플, 표본, 시식하다, 시험하다"
+  },
+  {
+    "eng": "notify",
+    "kor": "알리다, 통지하다, 통보하다"
+  },
+  {
+    "eng": "notification",
+    "kor": "통지, 통지서"
+  },
+  {
+    "eng": "inform",
+    "kor": "알리다, 통지하다"
+  },
+  {
+    "eng": "notify 사람 +of내용/that절",
+    "kor": "~에게 ~에 대해 통지하다"
+  },
+  {
+    "eng": "announce (to사람) that절",
+    "kor": "(~에게) ~을 발표하다"
+  },
+  {
+    "eng": "reveal 내용 (to 사람)",
+    "kor": "(~에게) ~을 누설하다, 폭로하다"
+  },
+  {
+    "eng": "perform",
+    "kor": "행하다, 실행하다, 수행하다"
+  },
+  {
+    "eng": "conduct",
+    "kor": "수행, 행동하다, 실행하다, 수행하다, 이끌다"
+  },
+  {
+    "eng": "complete",
+    "kor": "완수하다, 완료하다, 완성하다, 완전한, 완료된, 완성된"
+  },
+  {
+    "eng": "monitor",
+    "kor": "감독하다, 감시하다, 검토하다, 지켜보다"
+  },
+  {
+    "eng": "deserve",
+    "kor": "~할 만하다, ~할 가치가 있다"
+  },
+  {
+    "eng": "deserved",
+    "kor": "응당한"
+  },
+  {
+    "eng": "well-deserved advancement",
+    "kor": "응당한 승진"
+  },
+  {
+    "eng": "assignment",
+    "kor": "일, 임무, 과제"
+  },
+  {
+    "eng": "entire",
+    "kor": "전체의"
+  },
+  {
+    "eng": "entirety",
+    "kor": "전체, 전부"
+  },
+  {
+    "eng": "release",
+    "kor": "발표하다, 공개하다, 출시, 발매"
+  },
+  {
+    "eng": "press release",
+    "kor": "보도 자료"
+  },
+  {
+    "eng": "release date",
+    "kor": "발표일, 출시일, 개봉일"
+  },
+  {
+    "eng": "extension",
+    "kor": "연장, 연기, 내선, 확장, 확대"
+  },
+  {
+    "eng": "extend",
+    "kor": "연장하다, 늘리다, 베풀다, 넓히다, 말하다"
+  },
+  {
+    "eng": "extensive",
+    "kor": "광범위한, 폭넓은"
+  },
+  {
+    "eng": "electronically",
+    "kor": "컴퓨터 통신망으로, 컴퓨터로"
+  },
+  {
+    "eng": "electronic",
+    "kor": "컴퓨터 통신망의"
+  },
+  {
+    "eng": "attendance",
+    "kor": "출근, 출석"
+  },
+  {
+    "eng": "attend",
+    "kor": "~에 출석하다, 참석하다"
+  },
+  {
+    "eng": "attendant",
+    "kor": "수행원, 안내원"
+  },
+  {
+    "eng": "attendance records",
+    "kor": "출근 기록"
+  }
+]

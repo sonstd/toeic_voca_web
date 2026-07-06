@@ -1,0 +1,266 @@
+[
+  {
+    "eng": "amusement park",
+    "kor": "놀이동산"
+  },
+  {
+    "eng": "ancient history",
+    "kor": "고대 역사"
+  },
+  {
+    "eng": "artifact",
+    "kor": "공예품"
+  },
+  {
+    "eng": "auditorium",
+    "kor": "강당"
+  },
+  {
+    "eng": "be booked up",
+    "kor": "예약이 차다, 매진되다"
+  },
+  {
+    "eng": "box office",
+    "kor": "매표소"
+  },
+  {
+    "eng": "cheerful",
+    "kor": "쾌활한, 명랑한"
+  },
+  {
+    "eng": "choir",
+    "kor": "합창단"
+  },
+  {
+    "eng": "entertain",
+    "kor": "즐겁게 하다, 대접하다, 환대하다"
+  },
+  {
+    "eng": "flower arrangement",
+    "kor": "꽃꽃이"
+  },
+  {
+    "eng": "flower bed",
+    "kor": "화단"
+  },
+  {
+    "eng": "go to a film",
+    "kor": "영화보러가다"
+  },
+  {
+    "eng": "grip",
+    "kor": "꽉 잡다, 움켜잡다"
+  },
+  {
+    "eng": "have a race",
+    "kor": "경주하다"
+  },
+  {
+    "eng": "jog along the street",
+    "kor": "길을 따라 조깅하다"
+  },
+  {
+    "eng": "musical instrument",
+    "kor": "악기"
+  },
+  {
+    "eng": "oar",
+    "kor": "노, 노를 젓다"
+  },
+  {
+    "eng": "oil painting",
+    "kor": "유화"
+  },
+  {
+    "eng": "outdoor",
+    "kor": "야외의"
+  },
+  {
+    "eng": "paddle",
+    "kor": "노를 젓다, 물장구를 치다, 노"
+  },
+  {
+    "eng": "premiere",
+    "kor": "특별개봉, 초연"
+  },
+  {
+    "eng": "rake leaves",
+    "kor": "낙엽을 긁어모으다"
+  },
+  {
+    "eng": "recreational activity",
+    "kor": "오락 활동"
+  },
+  {
+    "eng": "right",
+    "kor": "권리, 바른, 옳은"
+  },
+  {
+    "eng": "running time",
+    "kor": "상영 시간"
+  },
+  {
+    "eng": "sail a boat",
+    "kor": "보트를 타고 항해하다"
+  },
+  {
+    "eng": "slide down",
+    "kor": "미끄러져 내려가다"
+  },
+  {
+    "eng": "splash",
+    "kor": "튀기다"
+  },
+  {
+    "eng": "sport tournament",
+    "kor": "운동 경기"
+  },
+  {
+    "eng": "stadium",
+    "kor": "경기장"
+  },
+  {
+    "eng": "stay up",
+    "kor": "일어나 있다"
+  },
+  {
+    "eng": "stroll",
+    "kor": "한가롭게 거닐다, 산책하다"
+  },
+  {
+    "eng": "take a break",
+    "kor": "잠깐 휴식을 취하다"
+  },
+  {
+    "eng": "take A for a walk",
+    "kor": "A를 산책에 데려가다"
+  },
+  {
+    "eng": "take a photograph",
+    "kor": "사진을 찍다"
+  },
+  {
+    "eng": "take a walk",
+    "kor": "산책하다"
+  },
+  {
+    "eng": "take great pleasure",
+    "kor": "큰 즐거움을 찾다"
+  },
+  {
+    "eng": "touch up a photograph",
+    "kor": "사진을 조금 수정하다"
+  },
+  {
+    "eng": "vacation package",
+    "kor": "휴가 패키지, 여행 패키지"
+  },
+  {
+    "eng": "wait for seats",
+    "kor": "자리를 기다리다"
+  },
+  {
+    "eng": "wait in line",
+    "kor": "줄을 서서 기다리다"
+  },
+  {
+    "eng": "water the plants",
+    "kor": "화초에 물을 주다"
+  },
+  {
+    "eng": "amuse",
+    "kor": "재미있게 하다, 즐겁게 하다"
+  },
+  {
+    "eng": "artistic",
+    "kor": "예술적인"
+  },
+  {
+    "eng": "even though",
+    "kor": "비록 ~일지라도"
+  },
+  {
+    "eng": "exhibit",
+    "kor": "전시회, 전시하다"
+  },
+  {
+    "eng": "make onself at home",
+    "kor": "편히 쉬다"
+  },
+  {
+    "eng": "municipal",
+    "kor": "자치 도시의, 시립의"
+  },
+  {
+    "eng": "owed",
+    "kor": "빚지고 있는"
+  },
+  {
+    "eng": "several",
+    "kor": "몇몇의, 몇 개의"
+  },
+  {
+    "eng": "spectator",
+    "kor": "관중"
+  },
+  {
+    "eng": "usher",
+    "kor": "좌석 안내원"
+  },
+  {
+    "eng": "win a contest",
+    "kor": "대회에서 이기다"
+  },
+  {
+    "eng": "admission to",
+    "kor": "~로 입장"
+  },
+  {
+    "eng": "contestant",
+    "kor": "경기자, 경쟁자"
+  },
+  {
+    "eng": "delight",
+    "kor": "기쁨"
+  },
+  {
+    "eng": "do one's hair",
+    "kor": "머리 손질하다"
+  },
+  {
+    "eng": "enjoyable",
+    "kor": "재미있는, 즐거운"
+  },
+  {
+    "eng": "group rate",
+    "kor": "단체 요금"
+  },
+  {
+    "eng": "head for",
+    "kor": "~로 향하다"
+  },
+  {
+    "eng": "out of order",
+    "kor": "고장 난"
+  },
+  {
+    "eng": "periodical",
+    "kor": "정기 간행물, 주기적인"
+  },
+  {
+    "eng": "playing field",
+    "kor": "경기장"
+  },
+  {
+    "eng": "register for",
+    "kor": "~에 등록하다"
+  },
+  {
+    "eng": "show up",
+    "kor": "나타나다, 돋보이게 하다"
+  },
+  {
+    "eng": "take a tour",
+    "kor": "여행하다, 둘러보다"
+  }
+]

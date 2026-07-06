@@ -1,0 +1,286 @@
+[
+  {
+    "eng": "host",
+    "kor": "주최자, 사회자, (대회 등을) 주최하다"
+  },
+  {
+    "eng": "annual",
+    "kor": "매년의"
+  },
+  {
+    "eng": "biannual",
+    "kor": "반 년마다"
+  },
+  {
+    "eng": "biennial",
+    "kor": "2년마다, 격년의"
+  },
+  {
+    "eng": "annually",
+    "kor": "매년, 해마다"
+  },
+  {
+    "eng": "purpose",
+    "kor": "목적, 의도"
+  },
+  {
+    "eng": "purposely",
+    "kor": "고의로, 일부러"
+  },
+  {
+    "eng": "aim",
+    "kor": "목적"
+  },
+  {
+    "eng": "enroll in + 명사",
+    "kor": "~에 등록하다"
+  },
+  {
+    "eng": "enrollment",
+    "kor": "등록"
+  },
+  {
+    "eng": "register",
+    "kor": "등록하다"
+  },
+  {
+    "eng": "sign up",
+    "kor": "등록하다"
+  },
+  {
+    "eng": "lecture",
+    "kor": "강의, 강연"
+  },
+  {
+    "eng": "lecturer",
+    "kor": "강연자"
+  },
+  {
+    "eng": "participant",
+    "kor": "참가자"
+  },
+  {
+    "eng": "participate in + 명사",
+    "kor": "~에 참가하다, ~에 참석하다"
+  },
+  {
+    "eng": "participation",
+    "kor": "참가"
+  },
+  {
+    "eng": "attendee",
+    "kor": "참가자"
+  },
+  {
+    "eng": "attend",
+    "kor": "참석하다, 출석하다"
+  },
+  {
+    "eng": "attend to + 명사",
+    "kor": "~을 처리하다, ~을 돌보다"
+  },
+  {
+    "eng": "attendance",
+    "kor": "참석, 출석"
+  },
+  {
+    "eng": "attendant",
+    "kor": "안내원, 수행원, 시중드는 사람, (특정 수행을 위한) 참석자"
+  },
+  {
+    "eng": "encourage A to + 동사원형",
+    "kor": "A에게 ~하도록 장려하다"
+  },
+  {
+    "eng": "be encouraged to + 동사원형",
+    "kor": "~하도록 장려되다"
+  },
+  {
+    "eng": "promote",
+    "kor": "증진하다, 촉진하다, 승진시키다"
+  },
+  {
+    "eng": "leave",
+    "kor": "휴가, 떠나다, 남기다"
+  },
+  {
+    "eng": "on leave",
+    "kor": "휴가로, 휴가중"
+  },
+  {
+    "eng": "leave for + 명사",
+    "kor": "~을 향해 떠나다"
+  },
+  {
+    "eng": "leave A for B",
+    "kor": "B에게 A를 남기다"
+  },
+  {
+    "eng": "recommendation",
+    "kor": "추천사항, 추천"
+  },
+  {
+    "eng": "conference",
+    "kor": "회의, 회담"
+  },
+  {
+    "eng": "schedule",
+    "kor": "예정하다, 스케줄 "
+  },
+  {
+    "eng": "be scheduled for + 명사(주로 시점)",
+    "kor": "~(언제)로 예정되어 있다"
+  },
+  {
+    "eng": "be scheduled to + 동사원형",
+    "kor": "~할 예정이다"
+  },
+  {
+    "eng": "include",
+    "kor": "포함하다"
+  },
+  {
+    "eng": "inclusion",
+    "kor": "포함, 함유"
+  },
+  {
+    "eng": "inclusive",
+    "kor": "포괄적인"
+  },
+  {
+    "eng": "contain",
+    "kor": "포함하다"
+  },
+  {
+    "eng": "exclude",
+    "kor": "제외하다"
+  },
+  {
+    "eng": "consist of + 명사",
+    "kor": "~로 구성되다"
+  },
+  {
+    "eng": "result",
+    "kor": "결과"
+  },
+  {
+    "eng": "as a result of + 명사",
+    "kor": "~의 결과로"
+  },
+  {
+    "eng": "as a result",
+    "kor": "결과적으로"
+  },
+  {
+    "eng": "result in + 명사",
+    "kor": "~을 야기하다, ~라는 결과를 초래하다"
+  },
+  {
+    "eng": "result from + 명사",
+    "kor": "~에서 유래하다"
+  },
+  {
+    "eng": "register",
+    "kor": "등록하다"
+  },
+  {
+    "eng": "registration",
+    "kor": "등록"
+  },
+  {
+    "eng": "register for + 명사",
+    "kor": "~에 등록하다"
+  },
+  {
+    "eng": "require",
+    "kor": "요구하다"
+  },
+  {
+    "eng": "requirement",
+    "kor": "요구"
+  },
+  {
+    "eng": "required",
+    "kor": "필수의"
+  },
+  {
+    "eng": "call for + 명사",
+    "kor": "~을 필요로 하다"
+  },
+  {
+    "eng": "entail",
+    "kor": "수반하다"
+  },
+  {
+    "eng": "require A to + 동사원형",
+    "kor": "A에게 ~하라고 요구하다"
+  },
+  {
+    "eng": "be required to + 동사원형",
+    "kor": "~하도록 요구되다"
+  },
+  {
+    "eng": "be required for + 명사",
+    "kor": "~을 위해 요구되다"
+  },
+  {
+    "eng": "grateful",
+    "kor": "고마워하는, 감사하는"
+  },
+  {
+    "eng": "overtime",
+    "kor": "초과근무, 야근"
+  },
+  {
+    "eng": "responsibility",
+    "kor": "부담, 책임, 의무"
+  },
+  {
+    "eng": "responsible",
+    "kor": "책임 있는"
+  },
+  {
+    "eng": "assent",
+    "kor": "찬성하다, 승인, 동의"
+  },
+  {
+    "eng": "regard",
+    "kor": "~을 -으로 간주하다, 여기다, 관심, 배려"
+  },
+  {
+    "eng": "regarding",
+    "kor": "~에 관하여"
+  },
+  {
+    "eng": "view",
+    "kor": "~라고 여기다"
+  },
+  {
+    "eng": "regard A as B",
+    "kor": "A를 B로 간주하다"
+  },
+  {
+    "eng": "show little regard for + 명사",
+    "kor": "~에 대해 거의 관심을 보이지 않다"
+  },
+  {
+    "eng": "send one's regards",
+    "kor": "안부를 전하다"
+  },
+  {
+    "eng": "tentative",
+    "kor": "임시적인, 잠정적인"
+  },
+  {
+    "eng": "tentatively",
+    "kor": "잠정적으로, 임시로"
+  },
+  {
+    "eng": "temporary",
+    "kor": "임시의"
+  },
+  {
+    "eng": "indefinite",
+    "kor": "무기한"
+  }
+]

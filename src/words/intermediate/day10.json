@@ -1,0 +1,270 @@
+[
+  {
+    "eng": "at the moment",
+    "kor": "지금"
+  },
+  {
+    "eng": "celebrate",
+    "kor": "축하하다"
+  },
+  {
+    "eng": "decorative item",
+    "kor": "장식품"
+  },
+  {
+    "eng": "discounted coupon",
+    "kor": "할인권"
+  },
+  {
+    "eng": "for sale",
+    "kor": "팔려고 내놓은"
+  },
+  {
+    "eng": "half price",
+    "kor": "반값"
+  },
+  {
+    "eng": "have A strapped to one's shoulder",
+    "kor": "~의 어깨에 A를 매고 있다"
+  },
+  {
+    "eng": "instead",
+    "kor": "대신에"
+  },
+  {
+    "eng": "make a purchase",
+    "kor": "구입하다"
+  },
+  {
+    "eng": "make no difference",
+    "kor": "상관없다, 중요하지 않다"
+  },
+  {
+    "eng": "make payment",
+    "kor": "지불하다"
+  },
+  {
+    "eng": "not that i'm aware of",
+    "kor": "내가 아는 한 아니다"
+  },
+  {
+    "eng": "out of town",
+    "kor": "시내에 없는, 다른 곳으로 떠난"
+  },
+  {
+    "eng": "overcoat",
+    "kor": "외투"
+  },
+  {
+    "eng": "pay in cash",
+    "kor": "현찰로 지불하다"
+  },
+  {
+    "eng": "put out for display",
+    "kor": "~을 전시해 놓다, 진열해 놓다"
+  },
+  {
+    "eng": "shoelace",
+    "kor": "신발 끈"
+  },
+  {
+    "eng": "shopkeeper",
+    "kor": "가게 주인"
+  },
+  {
+    "eng": "showroom",
+    "kor": "진열실, 전시실"
+  },
+  {
+    "eng": "sleeve",
+    "kor": "소매가"
+  },
+  {
+    "eng": "souvenir",
+    "kor": "기념품"
+  },
+  {
+    "eng": "stack",
+    "kor": "더미, 쌓아 올리다"
+  },
+  {
+    "eng": "stand in line",
+    "kor": "줄을 서다"
+  },
+  {
+    "eng": "storefront",
+    "kor": "가게 앞 공간"
+  },
+  {
+    "eng": "stylish",
+    "kor": "패션 감각이 있는, 멋진"
+  },
+  {
+    "eng": "tag",
+    "kor": "꼬리표"
+  },
+  {
+    "eng": "take the order",
+    "kor": "주문을 받다"
+  },
+  {
+    "eng": "try on",
+    "kor": "입어 보다"
+  },
+  {
+    "eng": "underline",
+    "kor": "밑줄을 긋다, 강조하다"
+  },
+  {
+    "eng": "watch band",
+    "kor": "시곗줄"
+  },
+  {
+    "eng": "window-shopping",
+    "kor": "아이쇼핑"
+  },
+  {
+    "eng": "afford to do",
+    "kor": "~할 수 있다, ~할 여유가 있다"
+  },
+  {
+    "eng": "apparel",
+    "kor": "의복, 의류"
+  },
+  {
+    "eng": "dairy products",
+    "kor": "유제품"
+  },
+  {
+    "eng": "elsewhere",
+    "kor": "다른 장소에서는, 다른 경우에"
+  },
+  {
+    "eng": "gift certificate",
+    "kor": "상품권"
+  },
+  {
+    "eng": "glassware",
+    "kor": "유리제품"
+  },
+  {
+    "eng": "inexpensive",
+    "kor": "비싸지 않은"
+  },
+  {
+    "eng": "lately",
+    "kor": "최근에"
+  },
+  {
+    "eng": "latest",
+    "kor": "최신의"
+  },
+  {
+    "eng": "luxury",
+    "kor": "사치, 사치품, 값비싼"
+  },
+  {
+    "eng": "outerwear",
+    "kor": "겉옷, 외투"
+  },
+  {
+    "eng": "outlet",
+    "kor": "판매대리점, 소매점, 콘센트"
+  },
+  {
+    "eng": "portable",
+    "kor": "휴대용의"
+  },
+  {
+    "eng": "readership",
+    "kor": "독자의 수"
+  },
+  {
+    "eng": "readily",
+    "kor": "즉시, 손쉽게"
+  },
+  {
+    "eng": "refundable",
+    "kor": "환불 가능한, 변제 가능한"
+  },
+  {
+    "eng": "value",
+    "kor": "가격, 가치"
+  },
+  {
+    "eng": "a selection of",
+    "kor": "~의 모음"
+  },
+  {
+    "eng": "a variety of",
+    "kor": "다양한"
+  },
+  {
+    "eng": "at a discounted price",
+    "kor": "할인가로"
+  },
+  {
+    "eng": "by check",
+    "kor": "수표로"
+  },
+  {
+    "eng": "by credit card",
+    "kor": "신용카드로"
+  },
+  {
+    "eng": "by no means",
+    "kor": "결코 ~이 아닌"
+  },
+  {
+    "eng": "extra charge",
+    "kor": "추가 비용"
+  },
+  {
+    "eng": "get in line",
+    "kor": "줄에 들어가 서다"
+  },
+  {
+    "eng": "give a discount",
+    "kor": "할인하다"
+  },
+  {
+    "eng": "in cash",
+    "kor": "현금으로"
+  },
+  {
+    "eng": "merchandise",
+    "kor": "상품, 제품"
+  },
+  {
+    "eng": "no later than",
+    "kor": "늦어도 ~까지"
+  },
+  {
+    "eng": "showcase",
+    "kor": "유리진열장, 공개 행사"
+  },
+  {
+    "eng": "textile",
+    "kor": "직물, 섬유"
+  },
+  {
+    "eng": "thrifty",
+    "kor": "검소한, 검약하는"
+  },
+  {
+    "eng": "valid for",
+    "kor": "~에 유효한, ~동안 유효한"
+  },
+  {
+    "eng": "voucher",
+    "kor": "상품권"
+  },
+  {
+    "eng": "wholesale",
+    "kor": "도매의, 다량의"
+  },
+  {
+    "eng": "wrap a present",
+    "kor": "선물을 포장하다"
+  }
+]

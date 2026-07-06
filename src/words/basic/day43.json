@@ -1,0 +1,342 @@
+[
+  {
+    "eng": "agenda",
+    "kor": "의제, 의사일정"
+  },
+  {
+    "eng": "convene",
+    "kor": "모이다, 개최되다"
+  },
+  {
+    "eng": "convention",
+    "kor": "회의, 대회"
+  },
+  {
+    "eng": "refute",
+    "kor": "부인하다, 반박하다"
+  },
+  {
+    "eng": "refutation",
+    "kor": "반박, 논박"
+  },
+  {
+    "eng": "coordination",
+    "kor": "조정"
+  },
+  {
+    "eng": "coordinate",
+    "kor": "조정하다"
+  },
+  {
+    "eng": "coordinator",
+    "kor": "진행자, 조정자"
+  },
+  {
+    "eng": "unanimous",
+    "kor": "만장일치의, 동의하는"
+  },
+  {
+    "eng": "unanimously",
+    "kor": "만장일치로"
+  },
+  {
+    "eng": "express unanimous support",
+    "kor": "만장일치의 지지를 표명하다"
+  },
+  {
+    "eng": "convince",
+    "kor": "납득시키다, 확신시키다"
+  },
+  {
+    "eng": "convincing",
+    "kor": "설득력 있는"
+  },
+  {
+    "eng": "convinced",
+    "kor": "확신하는"
+  },
+  {
+    "eng": "convince A of B",
+    "kor": "A에게 B를 납득시키다"
+  },
+  {
+    "eng": "convince A that절",
+    "kor": "A에게 ~을 납득시키다"
+  },
+  {
+    "eng": "consensus",
+    "kor": "여론, 일치된 의견"
+  },
+  {
+    "eng": "consent",
+    "kor": "동의하다, 동의, 승낙"
+  },
+  {
+    "eng": "agreement",
+    "kor": "일치, 합의"
+  },
+  {
+    "eng": "general consensus",
+    "kor": "전반적인 여론"
+  },
+  {
+    "eng": "reach a consensus on",
+    "kor": "~에 합의를 보다, 합의에 도달하다"
+  },
+  {
+    "eng": "defer",
+    "kor": "연기하다, 미루다"
+  },
+  {
+    "eng": "postpone, delay",
+    "kor": "연기하다"
+  },
+  {
+    "eng": "usually",
+    "kor": "보통, 일반적으로"
+  },
+  {
+    "eng": "usual",
+    "kor": "보통의, 평상시의"
+  },
+  {
+    "eng": "unusually",
+    "kor": "보통과는 달리, 유별나게"
+  },
+  {
+    "eng": "reschedule",
+    "kor": "일정을 바꾸다"
+  },
+  {
+    "eng": "meeting",
+    "kor": "회의"
+  },
+  {
+    "eng": "determine",
+    "kor": "알아내다, 결정하다, 확정하다"
+  },
+  {
+    "eng": "determination",
+    "kor": "결심, 결정"
+  },
+  {
+    "eng": "determined",
+    "kor": "단호한, 확정된"
+  },
+  {
+    "eng": "determine the cause of",
+    "kor": "~의 원인을 알아내다"
+  },
+  {
+    "eng": "report",
+    "kor": "보고하다, 출두하다, 알리다, 보고서, 보도, 기록"
+  },
+  {
+    "eng": "reportable",
+    "kor": "보고할 수 있는, 보도 가치가 있는"
+  },
+  {
+    "eng": "reportedly",
+    "kor": "전하는 바에 따르면, 소문에 따르면"
+  },
+  {
+    "eng": "report A to B",
+    "kor": "A를 B에게 보고하다"
+  },
+  {
+    "eng": "comment",
+    "kor": "논평하다, 언급하다, 비평, 의견"
+  },
+  {
+    "eng": "comment about/on",
+    "kor": "~에 대해 말하다"
+  },
+  {
+    "eng": "phase",
+    "kor": "단계"
+  },
+  {
+    "eng": "approve",
+    "kor": "승인하다, 찬성하다"
+  },
+  {
+    "eng": "approved",
+    "kor": "승인받은"
+  },
+  {
+    "eng": "approve the request",
+    "kor": "요청을 승인하다"
+  },
+  {
+    "eng": "approve the plan",
+    "kor": "계획을 찬성하다"
+  },
+  {
+    "eng": "enclosed",
+    "kor": "동봉된"
+  },
+  {
+    "eng": "enclose",
+    "kor": "동봉하다, 에워싸다"
+  },
+  {
+    "eng": "easy",
+    "kor": "쉬운, 용이한"
+  },
+  {
+    "eng": "ease",
+    "kor": "쉬움, 용이함"
+  },
+  {
+    "eng": "easily",
+    "kor": "쉽게"
+  },
+  {
+    "eng": "smooth",
+    "kor": "순조로운"
+  },
+  {
+    "eng": "easy to do",
+    "kor": "~하기 쉽다"
+  },
+  {
+    "eng": "record",
+    "kor": "기록, 경력, 이력, 기록하다"
+  },
+  {
+    "eng": "register",
+    "kor": "기록하다"
+  },
+  {
+    "eng": "transaction records",
+    "kor": "거래 내역"
+  },
+  {
+    "eng": "recording",
+    "kor": "녹화, 녹음"
+  },
+  {
+    "eng": "suggestion",
+    "kor": "제안"
+  },
+  {
+    "eng": "suggest",
+    "kor": "~을 제안하다"
+  },
+  {
+    "eng": "proposal",
+    "kor": "안, 계획"
+  },
+  {
+    "eng": "attention",
+    "kor": "주의, 경청"
+  },
+  {
+    "eng": "attentive",
+    "kor": "경청하는"
+  },
+  {
+    "eng": "attentively",
+    "kor": "주의 깊게"
+  },
+  {
+    "eng": "pay attention to",
+    "kor": "~에 주의를 기울이다"
+  },
+  {
+    "eng": "call attention to",
+    "kor": "~에 대해 타인의 주의를 환기시키다"
+  },
+  {
+    "eng": "catch one's attention",
+    "kor": "~의 주의를 끌다"
+  },
+  {
+    "eng": "attentive to",
+    "kor": "~을 경청하는"
+  },
+  {
+    "eng": "object",
+    "kor": "반대하다, 목표, 대상"
+  },
+  {
+    "eng": "objection",
+    "kor": "반대, 이의"
+  },
+  {
+    "eng": "objective",
+    "kor": "객관적인"
+  },
+  {
+    "eng": "object to ~ing",
+    "kor": "~에 반대하다"
+  },
+  {
+    "eng": "coincidentally",
+    "kor": "우연히, 일치하게, 동시 발생적으로"
+  },
+  {
+    "eng": "crowded",
+    "kor": "붐비는, 복잡한"
+  },
+  {
+    "eng": "undergo",
+    "kor": "겪다, 거치다, 경험하다"
+  },
+  {
+    "eng": "undergo extensive training",
+    "kor": "폭 넓은 훈련을 받다"
+  },
+  {
+    "eng": "undergo improvement",
+    "kor": "개선을 거치다"
+  },
+  {
+    "eng": "outcome",
+    "kor": "결과"
+  },
+  {
+    "eng": "narrowly",
+    "kor": "주의 깊게, 좁게, 가까스로, 간신히, 겨우"
+  },
+  {
+    "eng": "narrow",
+    "kor": "좁히다"
+  },
+  {
+    "eng": "be narrowly focused on",
+    "kor": "~에 주의 깊게 집중하다"
+  },
+  {
+    "eng": "differ",
+    "kor": "의견을 달리하다, 다르다"
+  },
+  {
+    "eng": "difference",
+    "kor": "차이점"
+  },
+  {
+    "eng": "different",
+    "kor": "다른"
+  },
+  {
+    "eng": "differently",
+    "kor": "다르게"
+  },
+  {
+    "eng": "differentiate A form B",
+    "kor": "A를 B와 구별하다"
+  },
+  {
+    "eng": "discuss",
+    "kor": "논의하다, 토론하다"
+  },
+  {
+    "eng": "discussion",
+    "kor": "토론, 토의"
+  },
+  {
+    "eng": "share",
+    "kor": "나누다, 공유하다"
+  }
+]

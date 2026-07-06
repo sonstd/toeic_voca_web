@@ -1,0 +1,358 @@
+[
+  {
+    "eng": "give",
+    "kor": "하다"
+  },
+  {
+    "eng": "given",
+    "kor": "주어진, 특정한, ~을 고려해볼 때"
+  },
+  {
+    "eng": "give a speech",
+    "kor": "연설하다"
+  },
+  {
+    "eng": "give a presentation",
+    "kor": "발표하다"
+  },
+  {
+    "eng": "give A one's support",
+    "kor": "A를 지지하다"
+  },
+  {
+    "eng": "brief",
+    "kor": "~에게 간단히 설명하다, 브리핑하다, 간결한, 짧은"
+  },
+  {
+    "eng": "briefly",
+    "kor": "간결하게, 짧게"
+  },
+  {
+    "eng": "brief A on B",
+    "kor": "A에게 B에 대해 간단히 설명하다"
+  },
+  {
+    "eng": "distract",
+    "kor": "산만하게 하다, 빗기게 하다"
+  },
+  {
+    "eng": "distraction",
+    "kor": "정신이 흩어짐"
+  },
+  {
+    "eng": "emphasis",
+    "kor": "강조, 중점"
+  },
+  {
+    "eng": "emphasize",
+    "kor": "강조하다"
+  },
+  {
+    "eng": "emphatic",
+    "kor": "강조하는"
+  },
+  {
+    "eng": "stress",
+    "kor": "강조"
+  },
+  {
+    "eng": "place an emphasis on",
+    "kor": "~을 강조하다"
+  },
+  {
+    "eng": "with emphasis",
+    "kor": "강조하여, 힘주어"
+  },
+  {
+    "eng": "press",
+    "kor": "언론, 보도기관, 누르다"
+  },
+  {
+    "eng": "pressure",
+    "kor": "압박, 곤경"
+  },
+  {
+    "eng": "media",
+    "kor": "대중 매체"
+  },
+  {
+    "eng": "press release",
+    "kor": "보도 자료"
+  },
+  {
+    "eng": "press conference",
+    "kor": "기자회견"
+  },
+  {
+    "eng": "organize",
+    "kor": "준비하다, 조직하다, 정리하다"
+  },
+  {
+    "eng": "organization",
+    "kor": "조직, 구성"
+  },
+  {
+    "eng": "organizer",
+    "kor": "주최자, 조직자"
+  },
+  {
+    "eng": "organize a committee",
+    "kor": "위원회를 조직하다"
+  },
+  {
+    "eng": "organize one's thoughts",
+    "kor": "생각을 정리하다"
+  },
+  {
+    "eng": "mention",
+    "kor": "언급하다, 언급"
+  },
+  {
+    "eng": "persuasive",
+    "kor": "설득력 있는"
+  },
+  {
+    "eng": "persuade",
+    "kor": "설득하다"
+  },
+  {
+    "eng": "persuasion",
+    "kor": "설득"
+  },
+  {
+    "eng": "persuasively",
+    "kor": "설득력 있게"
+  },
+  {
+    "eng": "unconvincing",
+    "kor": "설득력이 없는"
+  },
+  {
+    "eng": "understanding",
+    "kor": "이해심 있는"
+  },
+  {
+    "eng": "understand",
+    "kor": "이해하다"
+  },
+  {
+    "eng": "understandable",
+    "kor": "이해할 수 있는"
+  },
+  {
+    "eng": "adjourn",
+    "kor": "휴회하다"
+  },
+  {
+    "eng": "constructive",
+    "kor": "건설적인"
+  },
+  {
+    "eng": "construct",
+    "kor": "건설하다"
+  },
+  {
+    "eng": "construction",
+    "kor": "건설"
+  },
+  {
+    "eng": "constructively",
+    "kor": "건설적으로, 구조상으로"
+  },
+  {
+    "eng": "destructive",
+    "kor": "파괴적인"
+  },
+  {
+    "eng": "preside",
+    "kor": "사회를 보다, ~의 의장을 맡아보다"
+  },
+  {
+    "eng": "president",
+    "kor": "사회자, 의장"
+  },
+  {
+    "eng": "presidency",
+    "kor": "회장직"
+  },
+  {
+    "eng": "preside over",
+    "kor": "~의 사회를 보다, 통솔하다"
+  },
+  {
+    "eng": "irrelevant",
+    "kor": "관계가 없는, 무관한"
+  },
+  {
+    "eng": "relevant",
+    "kor": "관련된"
+  },
+  {
+    "eng": "irrelevant to",
+    "kor": "~와 관계없는"
+  },
+  {
+    "eng": "irrespective of",
+    "kor": "~와 상관없이"
+  },
+  {
+    "eng": "constraint",
+    "kor": "제한"
+  },
+  {
+    "eng": "constrain",
+    "kor": "제한하다"
+  },
+  {
+    "eng": "inhibition",
+    "kor": "거리낌, 억압"
+  },
+  {
+    "eng": "condensed",
+    "kor": "요약한, 응축한, 압축한"
+  },
+  {
+    "eng": "condense",
+    "kor": "요약하다, 압축하다"
+  },
+  {
+    "eng": "condensation",
+    "kor": "요약, 압축"
+  },
+  {
+    "eng": "endorse",
+    "kor": "지지하다, 보증하다"
+  },
+  {
+    "eng": "endorsement",
+    "kor": "지지"
+  },
+  {
+    "eng": "endorser",
+    "kor": "양도인, 배서인"
+  },
+  {
+    "eng": "punctually",
+    "kor": "제시간에, 늦지 않게"
+  },
+  {
+    "eng": "punctual",
+    "kor": "시간을 엄수하는"
+  },
+  {
+    "eng": "punctuality",
+    "kor": "시간 엄수"
+  },
+  {
+    "eng": "annual meeting",
+    "kor": "연례 회의"
+  },
+  {
+    "eng": "conference room",
+    "kor": "회의실"
+  },
+  {
+    "eng": "guest speaker",
+    "kor": "초청 연사"
+  },
+  {
+    "eng": "hand out",
+    "kor": "~을 나누어 주다"
+  },
+  {
+    "eng": "holiday",
+    "kor": "휴가, 방학"
+  },
+  {
+    "eng": "let's end",
+    "kor": "끝냅시다"
+  },
+  {
+    "eng": "meeting time",
+    "kor": "회의 시간"
+  },
+  {
+    "eng": "scan",
+    "kor": "살피다, 자세히 조사하다"
+  },
+  {
+    "eng": "shake hands",
+    "kor": "악수하다"
+  },
+  {
+    "eng": "speech",
+    "kor": "연설"
+  },
+  {
+    "eng": "teammate",
+    "kor": "팀, 동료"
+  },
+  {
+    "eng": "water",
+    "kor": "물, 물을 주다"
+  },
+  {
+    "eng": "write down",
+    "kor": "적다"
+  },
+  {
+    "eng": "advise A of B",
+    "kor": "A에게 B를 알리다"
+  },
+  {
+    "eng": "be held",
+    "kor": "열리다"
+  },
+  {
+    "eng": "be scheduled for",
+    "kor": "~로 예정되어 있다"
+  },
+  {
+    "eng": "business talk",
+    "kor": "사업 이야기"
+  },
+  {
+    "eng": "conversation",
+    "kor": "대화"
+  },
+  {
+    "eng": "debate",
+    "kor": "토론하다"
+  },
+  {
+    "eng": "express",
+    "kor": "표현하다"
+  },
+  {
+    "eng": "gathering",
+    "kor": "모임"
+  },
+  {
+    "eng": "judge",
+    "kor": "판단하다, 평가하다"
+  },
+  {
+    "eng": "local time",
+    "kor": "현지 시간"
+  },
+  {
+    "eng": "result in",
+    "kor": "~을 야기하다"
+  },
+  {
+    "eng": "seating chart",
+    "kor": "좌석 배치도"
+  },
+  {
+    "eng": "seminar",
+    "kor": "세미나"
+  },
+  {
+    "eng": "vote",
+    "kor": "투표하다, 투표"
+  },
+  {
+    "eng": "weekly",
+    "kor": "매주의, 매주"
+  }
+]
