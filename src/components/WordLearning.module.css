@@ -62,11 +62,6 @@
   font-weight: 800;
 }
 
-.pron {
-  font-size: 18px;
-  color: #6b7280;
-}
-
 .revealArea {
   margin-top: 16px;
   display: flex;
@@ -79,12 +74,6 @@
   font-size: 22px;
   font-weight: 700;
   color: #4338ca;
-}
-
-.ex {
-  font-size: 15px;
-  color: #4b5563;
-  max-width: 360px;
 }
 
 .revealButton {

@@ -63,12 +63,10 @@ export default function WordLearning({ level, levelLabel, day, totalDays, initia
 
       <section className={styles.card}>
         <p className={styles.eng}>{current.eng}</p>
-        <p className={styles.pron}>[{current.pron}]</p>
 
         {revealed && (
           <div className={styles.revealArea}>
             <p className={styles.kor}>{current.kor}</p>
-            <p className={styles.ex}>{current.ex}</p>
           </div>
         )}
 
