@@ -7,19 +7,25 @@
 .backLink {
   display: inline-block;
   margin-bottom: 16px;
-  color: #6b7280;
+  color: var(--color-text-secondary);
   font-size: 14px;
+  transition: color 0.15s;
+}
+
+.backLink:hover {
+  color: var(--color-text-primary);
 }
 
 .title {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 4px;
+  margin: 0 0 4px;
+  color: var(--color-text-primary);
 }
 
 .subtitle {
-  color: #6b7280;
-  margin-bottom: 24px;
+  color: var(--color-text-secondary);
+  margin: 0 0 24px;
 }
 
 .grid {
@@ -34,13 +40,14 @@
   justify-content: center;
   padding: 16px 8px;
   border-radius: 12px;
-  background: white;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
   font-weight: 600;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.2s ease;
 }
 
 .dayCard:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-card-hover);
 }

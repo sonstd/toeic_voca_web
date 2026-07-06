@@ -1,33 +1,58 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useWordsCache } from './WordsCacheProvider';
+import { useSettings } from './SettingsProvider';
 import styles from './WordLearning.module.css';
+
+function shuffleArray(arr) {
+  const result = [...arr];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
 
 export default function WordLearning({ level, levelLabel, day, totalDays, initialWords }) {
   const router = useRouter();
   const { getCached, setInitial } = useWordsCache();
+  const { shuffle } = useSettings();
 
-  // 서버에서 받아온 첫 데이터를 캐시에 등록 (이후 백그라운드 prefetch가 중복으로 다시 받지 않도록)
-  useEffect(() => {
-    setInitial(day, initialWords);
-  }, [day, initialWords, setInitial]);
+  // shuffle 값을 ref로 관리 → day 변경 effect에서 클로저 문제 없이 최신값 참조
+  const shuffleRef = useRef(shuffle);
+  useEffect(() => { shuffleRef.current = shuffle; }, [shuffle]);
 
-  const words = getCached(day) ?? initialWords;
+  // 현재 day의 원본(비섞인) 단어 목록
+  const baseWordsRef = useRef(initialWords);
 
+  const [displayWords, setDisplayWords] = useState(() =>
+    shuffle ? shuffleArray(initialWords) : initialWords
+  );
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
 
-  // day가 바뀌면(이전/다음 Day로 이동) 단어 위치 초기화
+  // day가 바뀔 때: 캐시 등록 + 현재 shuffle 설정에 맞게 단어 목록 세팅
   useEffect(() => {
+    setInitial(day, initialWords);
+    const source = getCached(day) ?? initialWords;
+    baseWordsRef.current = source;
+    setDisplayWords(shuffleRef.current ? shuffleArray(source) : source);
     setIndex(0);
     setRevealed(false);
-  }, [day]);
+  }, [day, initialWords, setInitial, getCached]);
 
-  const current = words[index];
+  // shuffle 설정이 바뀔 때: 같은 단어 목록을 재정렬 (인덱스 초기화)
+  useEffect(() => {
+    setDisplayWords(shuffle ? shuffleArray(baseWordsRef.current) : baseWordsRef.current);
+    setIndex(0);
+    setRevealed(false);
+  }, [shuffle]);
+
+  const current = displayWords[index];
   const isFirstWord = index === 0;
-  const isLastWord = index === words.length - 1;
+  const isLastWord = index === displayWords.length - 1;
 
   const goPrevWord = useCallback(() => {
     setRevealed(false);
@@ -36,8 +61,8 @@ export default function WordLearning({ level, levelLabel, day, totalDays, initia
 
   const goNextWord = useCallback(() => {
     setRevealed(false);
-    setIndex((i) => Math.min(words.length - 1, i + 1));
-  }, [words.length]);
+    setIndex((i) => Math.min(displayWords.length - 1, i + 1));
+  }, [displayWords.length]);
 
   const goPrevDay = () => day > 1 && router.push(`/${level}/day${day - 1}`);
   const goNextDay = () => day < totalDays && router.push(`/${level}/day${day + 1}`);
@@ -57,7 +82,7 @@ export default function WordLearning({ level, levelLabel, day, totalDays, initia
           <span className={styles.dayLabel}>Day {day}</span>
         </div>
         <span className={styles.progress}>
-          {index + 1} / {words.length}
+          {index + 1} / {displayWords.length}
         </span>
       </header>
 

@@ -2,9 +2,12 @@
   max-width: 480px;
   margin: 0 auto;
   padding: 0 20px 40px;
+  min-height: 100vh;
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  background: var(--color-bg);
+  transition: background 0.2s ease;
 }
 
 .topbar {
@@ -12,7 +15,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 16px 0;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--color-border);
+  transition: border-color 0.2s ease;
 }
 
 .backButton {
@@ -20,6 +24,7 @@
   background: none;
   font-size: 20px;
   padding: 4px 8px;
+  color: var(--color-text-primary);
 }
 
 .levelDayInfo {
@@ -31,7 +36,7 @@
 
 .levelLabel {
   font-size: 12px;
-  color: #9ca3af;
+  color: var(--color-text-muted);
 }
 
 .dayLabel {
@@ -41,7 +46,7 @@
 
 .progress {
   font-size: 13px;
-  color: #9ca3af;
+  color: var(--color-text-muted);
   min-width: 48px;
   text-align: right;
 }
@@ -60,20 +65,24 @@
 .eng {
   font-size: 36px;
   font-weight: 800;
+  color: var(--color-text-primary);
+  margin: 0;
 }
 
 .revealArea {
-  margin-top: 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  margin-top: 8px;
   animation: fadeIn 0.15s ease;
 }
 
 .kor {
   font-size: 22px;
   font-weight: 700;
-  color: #4338ca;
+  color: var(--color-kor);
+  margin: 0;
+  transition: color 0.2s ease;
 }
 
 .revealButton {
@@ -81,15 +90,19 @@
   padding: 14px 32px;
   border: none;
   border-radius: 999px;
-  background: #4338ca;
-  color: white;
+  background: var(--color-accent);
+  color: var(--color-accent-text);
   font-size: 16px;
   font-weight: 700;
+  transition: background 0.15s;
+}
+
+.revealButton:hover:not(:disabled) {
+  background: var(--color-accent-hover);
 }
 
 .wordNav {
   display: flex;
-  justify-content: space-between;
   gap: 12px;
   padding-top: 12px;
 }
@@ -97,15 +110,16 @@
 .navButton {
   flex: 1;
   padding: 14px 0;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--color-border);
   border-radius: 12px;
-  background: white;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
   font-weight: 600;
+  transition: background 0.12s, border-color 0.2s ease;
 }
 
 .dayNav {
   display: flex;
-  justify-content: space-between;
   gap: 12px;
   padding-top: 12px;
 }
@@ -115,18 +129,13 @@
   padding: 10px 0;
   border: none;
   border-radius: 12px;
-  background: #f3f4f6;
-  color: #374151;
+  background: var(--color-nav-bg);
+  color: var(--color-nav-text);
   font-size: 14px;
+  transition: background 0.15s, color 0.2s ease;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(4px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
