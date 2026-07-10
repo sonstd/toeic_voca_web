@@ -164,7 +164,7 @@ export default function HomeClient({ levels }) {
               <div className={styles.settingItem}>
                 <div className={styles.settingInfo}>
                   <p className={styles.settingLabel}>테마</p>
-                  <p className={styles.settingDesc}>테마 모드 선택</p>
+                  <p className={styles.settingDesc}>테마 모드를 선택해주세요.</p>
                 </div>
                 <div className={styles.segmented}>
                   <button
