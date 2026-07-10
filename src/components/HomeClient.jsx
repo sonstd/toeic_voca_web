@@ -45,12 +45,13 @@ export default function HomeClient({ levels }) {
   };
 
   const handleKakaoLogin = async () => {
+    // Supabase의 Kakao 프로바이더는 account_email·profile_image·profile_nickname을
+    // scopes 옵션과 무관하게 항상 함께 요청하므로 별도로 지정하지 않음
     const supabase = createClient();
     await supabase.auth.signInWithOAuth({
       provider: 'kakao',
       options: {
         redirectTo: `${window.location.origin}/auth/callback`,
-        scopes: 'profile_nickname profile_image',
       },
     });
   };
