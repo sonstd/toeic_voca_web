@@ -43,6 +43,16 @@ export default function HomeClient({ levels }) {
     });
   };
 
+  const handleKakaoLogin = async () => {
+    const supabase = createClient();
+    await supabase.auth.signInWithOAuth({
+      provider: 'kakao',
+      options: {
+        redirectTo: `${window.location.origin}/auth/callback`,
+      },
+    });
+  };
+
   const handleSignOut = async () => {
     await signOut();
     setAccountOpen(false);
@@ -221,12 +231,7 @@ export default function HomeClient({ levels }) {
                 구글 계정으로 로그인
               </button>
 
-              <button className={styles.providerBtn} disabled>
-                <span className={`${styles.providerIcon} ${styles.naverBadge}`}>N</span>
-                네이버 계정으로 로그인
-              </button>
-
-              <button className={styles.providerBtn} disabled>
+              <button className={styles.providerBtn} onClick={handleKakaoLogin}>
                 <span className={`${styles.providerIcon} ${styles.kakaoBadge}`}>K</span>
                 카카오 계정으로 로그인
               </button>
