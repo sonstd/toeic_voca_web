@@ -19,6 +19,17 @@ export async function fetchTestSessions(supabase) {
   return data;
 }
 
+export async function fetchTestSessionById(supabase, id) {
+  const { data, error } = await supabase
+    .from('test_sessions')
+    .select('*')
+    .eq('id', id)
+    .single();
+
+  if (error) throw error;
+  return data;
+}
+
 export async function hasTestedToday(supabase) {
   const startOfDay = new Date();
   startOfDay.setHours(0, 0, 0, 0);

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { useAuth } from './AuthProvider';
 import { createClient } from '@/lib/supabase/client';
 import { fetchTestSessions } from '@/lib/testSessions';
@@ -30,6 +31,7 @@ function formatDate(iso) {
 }
 
 export default function TestHistory({ levels, onRequestLogin }) {
+  const router = useRouter();
   const { user } = useAuth();
   const [sessions, setSessions] = useState(null); // null = 로딩중
 
@@ -70,17 +72,28 @@ export default function TestHistory({ levels, onRequestLogin }) {
 
   return (
     <div className={styles.list}>
-      {sessions.map((s) => (
-        <div key={s.id} className={styles.card}>
-          <div className={styles.cardHeader}>
-            <span className={styles.date}>{formatDate(s.created_at)}</span>
-            <span className={styles.score}>
-              {s.known_count} / {s.total_count}
-            </span>
+      {sessions.map((s) => {
+        const missedCount = s.total_count - s.known_count;
+        return (
+          <div key={s.id} className={styles.card}>
+            <div className={styles.cardHeader}>
+              <span className={styles.date}>{formatDate(s.created_at)}</span>
+              <span className={styles.score}>
+                {s.known_count} / {s.total_count}
+              </span>
+            </div>
+            <p className={styles.summary}>{summarizeSelection(s.selection, levels)}</p>
+            {missedCount > 0 && (
+              <button
+                className={styles.reviewBtn}
+                onClick={() => router.push(`/test/review/${s.id}`)}
+              >
+                몰랐던 단어 복습하기 ({missedCount}개)
+              </button>
+            )}
           </div>
-          <p className={styles.summary}>{summarizeSelection(s.selection, levels)}</p>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
