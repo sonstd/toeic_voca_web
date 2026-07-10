@@ -1,6 +1,8 @@
 'use client';
 
 import { createContext, useCallback, useContext, useEffect, useState } from 'react';
+import { useAuth } from './AuthProvider';
+import { createClient } from '@/lib/supabase/client';
 
 const SettingsContext = createContext(null);
 
@@ -13,46 +15,87 @@ export function useSettings() {
 const STORAGE_KEY = 'vocab-app-settings';
 const DEFAULT_SETTINGS = { theme: 'light', shuffle: false };
 
-function load() {
+// 비로그인 사용자: 이번 세션에서만 유지 (브라우저를 닫았다 열면 기본값으로 복귀)
+function loadSession() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = sessionStorage.getItem(STORAGE_KEY);
     if (raw) return { ...DEFAULT_SETTINGS, ...JSON.parse(raw) };
   } catch {}
   return DEFAULT_SETTINGS;
 }
 
-function save(s) {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); } catch {}
+function saveSession(s) {
+  try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(s)); } catch {}
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
 }
 
 export default function SettingsProvider({ children }) {
+  const { user } = useAuth();
   const [settings, setSettings] = useState(DEFAULT_SETTINGS);
 
-  // 마운트 시 localStorage에서 불러와 DOM에 반영
+  // 비로그인: 세션 스토리지에서 불러와 적용
   useEffect(() => {
-    const saved = load();
+    if (user) return;
+    const saved = loadSession();
     setSettings(saved);
-    document.documentElement.setAttribute('data-theme', saved.theme);
-  }, []);
+    applyTheme(saved.theme);
+  }, [user]);
 
-  // 테마 변경: 상태 갱신 + DOM 즉시 반영 + 저장
+  // 로그인: 계정(profiles)에 저장된 설정을 불러와 적용
+  useEffect(() => {
+    if (!user) return;
+    let cancelled = false;
+    const supabase = createClient();
+
+    supabase
+      .from('profiles')
+      .select('theme, shuffle')
+      .eq('id', user.id)
+      .single()
+      .then(({ data }) => {
+        if (cancelled) return;
+        const next = {
+          theme: data?.theme ?? DEFAULT_SETTINGS.theme,
+          shuffle: data?.shuffle ?? DEFAULT_SETTINGS.shuffle,
+        };
+        setSettings(next);
+        applyTheme(next.theme);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [user]);
+
+  // 로그인 시엔 계정에, 비로그인 시엔 세션 스토리지에 저장
+  const persist = useCallback((next) => {
+    if (user) {
+      const supabase = createClient();
+      supabase.from('profiles').update({ theme: next.theme, shuffle: next.shuffle }).eq('id', user.id).then(() => {});
+    } else {
+      saveSession(next);
+    }
+  }, [user]);
+
   const setTheme = useCallback((theme) => {
     setSettings((prev) => {
       const next = { ...prev, theme };
-      save(next);
-      document.documentElement.setAttribute('data-theme', theme);
+      applyTheme(theme);
+      persist(next);
       return next;
     });
-  }, []);
+  }, [persist]);
 
-  // 셔플 변경: 상태 갱신 + 저장
   const setShuffle = useCallback((shuffle) => {
     setSettings((prev) => {
       const next = { ...prev, shuffle };
-      save(next);
+      persist(next);
       return next;
     });
-  }, []);
+  }, [persist]);
 
   return (
     <SettingsContext.Provider value={{ ...settings, setTheme, setShuffle }}>

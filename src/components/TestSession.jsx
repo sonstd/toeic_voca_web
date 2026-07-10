@@ -7,10 +7,10 @@ import { createClient } from '@/lib/supabase/client';
 import { shuffleArray } from '@/lib/shuffle';
 import { saveTestSession, hasTestedToday } from '@/lib/testSessions';
 import { isDayUnlocked } from '@/lib/planLimits';
+import { getTestProgress, saveTestProgress, clearTestProgress } from '@/lib/testProgress';
 import wordStyles from './WordLearning.module.css';
 import styles from './TestSession.module.css';
 
-const SELECTION_KEY = 'vocab-test-selection';
 const JUST_COMPLETED_KEY = 'vocab-test-just-completed';
 
 export default function TestSession() {
@@ -34,9 +34,24 @@ export default function TestSession() {
       return;
     }
 
-    const raw = sessionStorage.getItem(SELECTION_KEY);
-    const rawSelection = raw ? JSON.parse(raw) : [];
-    const selection = rawSelection.filter(({ level, day }) => isDayUnlocked(level, day, plan));
+    const progress = getTestProgress();
+    if (!progress || !progress.selection?.length) {
+      router.replace('/');
+      return;
+    }
+
+    // 이미 단어를 불러온 적 있는 이어하기: 그대로 복원하고 다시 fetch하지 않음
+    if (progress.words?.length) {
+      selectionRef.current = progress.selection;
+      resultsRef.current = progress.results ?? [];
+      setWords(progress.words);
+      setIndex(progress.index ?? 0);
+      setPhase('quiz');
+      return;
+    }
+
+    // 새로 시작: 선택을 플랜에 맞게 필터링 후 단어 fetch
+    const selection = progress.selection.filter(({ level, day }) => isDayUnlocked(level, day, plan));
     if (!selection.length) {
       router.replace('/');
       return;
@@ -69,7 +84,13 @@ export default function TestSession() {
       if (cancelled) return;
       const combined = shuffleArray(lists.flat());
       setWords(combined);
-      setPhase(combined.length ? 'quiz' : 'empty');
+      if (combined.length) {
+        setPhase('quiz');
+        saveTestProgress({ selection, words: combined, index: 0, results: [] });
+      } else {
+        setPhase('empty');
+        clearTestProgress();
+      }
     })();
 
     return () => {
@@ -88,10 +109,18 @@ export default function TestSession() {
       known,
     });
     setRevealed(false);
-    if (index + 1 >= words.length) {
+    const nextIndex = index + 1;
+    const isDone = nextIndex >= words.length;
+    if (isDone) {
       setPhase('done');
     } else {
-      setIndex((i) => i + 1);
+      setIndex(nextIndex);
+      saveTestProgress({
+        selection: selectionRef.current,
+        words,
+        index: nextIndex,
+        results: resultsRef.current,
+      });
     }
   };
 
@@ -107,7 +136,7 @@ export default function TestSession() {
     })
       .catch(() => {})
       .finally(() => {
-        sessionStorage.removeItem(SELECTION_KEY);
+        clearTestProgress();
         sessionStorage.setItem(JUST_COMPLETED_KEY, '1');
       });
   }, [phase, user]);

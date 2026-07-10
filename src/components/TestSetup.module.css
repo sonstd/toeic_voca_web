@@ -134,3 +134,44 @@
   color: var(--color-accent-text);
   font-weight: 700;
 }
+
+.resumeNotice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.resumeNoticeText {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.resumeActions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.resumeSecondaryBtn,
+.resumePrimaryBtn {
+  flex: 1;
+  padding: 13px 0;
+  border: none;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.resumeSecondaryBtn {
+  background: var(--color-nav-bg);
+  color: var(--color-nav-text);
+}
+
+.resumePrimaryBtn {
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+}

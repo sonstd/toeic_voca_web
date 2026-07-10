@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'YeogiOttaeJalnan';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
-    font-weight: normal;
-    font-display: swap;
-}
-
 .wrapper {
   max-width: 480px;
   margin: 0 auto;
@@ -22,11 +15,25 @@
   padding: 20px 24px 0;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brandIcon {
+  border-radius: 8px;
+}
+
 .title {
-  font-size: 24px;
-  font-weight: 700;
-  font-family: 'YeogiOttaeJalnan';
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
   margin: 0;
+  background: linear-gradient(90deg, #f0902f 0%, #3ec6e0 35%, #6a3fa0 70%, #c0356e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .headerActions {

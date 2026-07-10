@@ -52,7 +52,10 @@ export default function HomeClient({ levels }) {
     <div className={styles.wrapper}>
 
       <header className={styles.header}>
-        <h1 className={styles.title}>토익 보카</h1>
+        <div className={styles.brand}>
+          <Image src="/icon.png" alt="" width={30} height={30} className={styles.brandIcon} />
+          <h1 className={styles.title}>vocaw</h1>
+        </div>
         <div className={styles.headerActions}>
           <button
             className={styles.iconBtn}
@@ -166,8 +169,8 @@ export default function HomeClient({ levels }) {
 
               <div className={styles.settingItem}>
                 <div className={styles.settingInfo}>
-                  <p className={styles.settingLabel}>단어 순서</p>
-                  <p className={styles.settingDesc}>Day 진입 시 단어 배열 방식 선택</p>
+                  <p className={styles.settingLabel}>학습 단어 순서</p>
+                  <p className={styles.settingDesc}>학습 Day의 단어 배열 방식이에요. 테스트는 항상 무작위로 출제돼요.</p>
                 </div>
                 <div className={styles.segmented}>
                   <button

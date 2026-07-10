@@ -6,10 +6,9 @@ import { useAuth } from './AuthProvider';
 import { createClient } from '@/lib/supabase/client';
 import { hasTestedToday } from '@/lib/testSessions';
 import { isDayUnlocked } from '@/lib/planLimits';
+import { getTestProgress, saveTestProgress, clearTestProgress } from '@/lib/testProgress';
 import ProSheet from './ProSheet';
 import styles from './TestSetup.module.css';
-
-const SELECTION_KEY = 'vocab-test-selection';
 
 export default function TestSetup({ levels, onRequestLogin }) {
   const router = useRouter();
@@ -17,12 +16,24 @@ export default function TestSetup({ levels, onRequestLogin }) {
   const [selected, setSelected] = useState({}); // `${level}:${day}` -> true
   const [proOpen, setProOpen] = useState(false);
   const [testedToday, setTestedToday] = useState(false);
+  const [resumeProgress, setResumeProgress] = useState(null); // { index, total } | null
 
   useEffect(() => {
     if (!user || planLoading || plan === 'pro') return;
     const supabase = createClient();
     hasTestedToday(supabase).then(setTestedToday);
   }, [user, plan, planLoading]);
+
+  // 도중에 중단한 테스트가 있는지 확인
+  useEffect(() => {
+    if (!user) return;
+    const progress = getTestProgress();
+    if (progress?.words?.length && (progress.index ?? 0) < progress.words.length) {
+      setResumeProgress({ index: progress.index ?? 0, total: progress.words.length });
+    } else {
+      setResumeProgress(null);
+    }
+  }, [user]);
 
   const selectedCount = Object.keys(selected).length;
 
@@ -70,8 +81,13 @@ export default function TestSetup({ levels, onRequestLogin }) {
       return { level, day: Number(day) };
     });
     if (!selection.length) return;
-    sessionStorage.setItem(SELECTION_KEY, JSON.stringify(selection));
+    saveTestProgress({ selection, words: null, index: 0, results: [] });
     router.push('/test/session');
+  };
+
+  const handleStartNew = () => {
+    clearTestProgress();
+    setResumeProgress(null);
   };
 
   if (!user) {
@@ -81,6 +97,24 @@ export default function TestSetup({ levels, onRequestLogin }) {
         <button className={styles.loginNoticeBtn} onClick={onRequestLogin}>
           로그인하기
         </button>
+      </div>
+    );
+  }
+
+  if (resumeProgress) {
+    return (
+      <div className={styles.resumeNotice}>
+        <p className={styles.resumeNoticeText}>
+          이전에 진행 중이던 테스트가 있어요 ({resumeProgress.index} / {resumeProgress.total})
+        </p>
+        <div className={styles.resumeActions}>
+          <button className={styles.resumeSecondaryBtn} onClick={handleStartNew}>
+            새로 시작하기
+          </button>
+          <button className={styles.resumePrimaryBtn} onClick={() => router.push('/test/session')}>
+            이어서 하기
+          </button>
+        </div>
       </div>
     );
   }
