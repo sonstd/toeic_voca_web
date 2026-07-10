@@ -1,20 +1,41 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from './AuthProvider';
+import { createClient } from '@/lib/supabase/client';
+import { hasTestedToday } from '@/lib/testSessions';
+import { isDayUnlocked } from '@/lib/planLimits';
+import ProSheet from './ProSheet';
 import styles from './TestSetup.module.css';
 
 const SELECTION_KEY = 'vocab-test-selection';
 
 export default function TestSetup({ levels, onRequestLogin }) {
   const router = useRouter();
-  const { user } = useAuth();
+  const { user, plan, planLoading } = useAuth();
   const [selected, setSelected] = useState({}); // `${level}:${day}` -> true
+  const [proOpen, setProOpen] = useState(false);
+  const [testedToday, setTestedToday] = useState(false);
+
+  useEffect(() => {
+    if (!user || planLoading || plan === 'pro') return;
+    const supabase = createClient();
+    hasTestedToday(supabase).then(setTestedToday);
+  }, [user, plan, planLoading]);
 
   const selectedCount = Object.keys(selected).length;
 
+  const unlockedDaysFor = (level, totalDays) => {
+    const days = Array.from({ length: totalDays }, (_, i) => i + 1);
+    return days.filter((day) => isDayUnlocked(level, day, plan));
+  };
+
   const toggleDay = (level, day) => {
+    if (!isDayUnlocked(level, day, plan)) {
+      setProOpen(true);
+      return;
+    }
     const key = `${level}:${day}`;
     setSelected((prev) => {
       const next = { ...prev };
@@ -25,17 +46,16 @@ export default function TestSetup({ levels, onRequestLogin }) {
   };
 
   const isLevelFullySelected = (level, totalDays) => {
-    for (let day = 1; day <= totalDays; day++) {
-      if (!selected[`${level}:${day}`]) return false;
-    }
-    return true;
+    const unlockedDays = unlockedDaysFor(level, totalDays);
+    return unlockedDays.length > 0 && unlockedDays.every((day) => selected[`${level}:${day}`]);
   };
 
   const toggleAllForLevel = (level, totalDays) => {
     const fullySelected = isLevelFullySelected(level, totalDays);
+    const unlockedDays = unlockedDaysFor(level, totalDays);
     setSelected((prev) => {
       const next = { ...prev };
-      for (let day = 1; day <= totalDays; day++) {
+      for (const day of unlockedDays) {
         const key = `${level}:${day}`;
         if (fullySelected) delete next[key];
         else next[key] = true;
@@ -83,14 +103,15 @@ export default function TestSetup({ levels, onRequestLogin }) {
             </div>
             <div className={styles.dayGrid}>
               {days.map((day) => {
+                const unlocked = isDayUnlocked(level, day, plan);
                 const active = !!selected[`${level}:${day}`];
                 return (
                   <button
                     key={day}
-                    className={`${styles.dayChip} ${active ? styles.dayChipActive : ''}`}
+                    className={`${styles.dayChip} ${active ? styles.dayChipActive : ''} ${!unlocked ? styles.dayChipLocked : ''}`}
                     onClick={() => toggleDay(level, day)}
                   >
-                    {day}
+                    {unlocked ? day : '🔒'}
                   </button>
                 );
               })}
@@ -100,14 +121,25 @@ export default function TestSetup({ levels, onRequestLogin }) {
       })}
 
       <div className={styles.startBar}>
-        <button
-          className={styles.startButton}
-          disabled={selectedCount === 0}
-          onClick={handleStart}
-        >
-          테스트 시작하기 ({selectedCount}일 선택됨)
-        </button>
+        {plan !== 'pro' && testedToday ? (
+          <div className={styles.limitNotice}>
+            <span className={styles.limitNoticeText}>오늘의 무료 테스트를 모두 사용했어요.</span>
+            <button className={styles.limitNoticeBtn} onClick={() => setProOpen(true)}>
+              Pro 살펴보기
+            </button>
+          </div>
+        ) : (
+          <button
+            className={styles.startButton}
+            disabled={selectedCount === 0}
+            onClick={handleStart}
+          >
+            테스트 시작하기 ({selectedCount}일 선택됨)
+          </button>
+        )}
       </div>
+
+      <ProSheet open={proOpen} onClose={() => setProOpen(false)} />
     </div>
   );
 }

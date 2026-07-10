@@ -8,9 +8,9 @@ import { useAuth } from './AuthProvider';
 import { createClient } from '@/lib/supabase/client';
 import TestSetup from './TestSetup';
 import TestHistory from './TestHistory';
+import ProSheet from './ProSheet';
 import styles from './HomeClient.module.css';
 
-const PRO_FEATURES = ['전체 레벨·Day 무제한 학습'];
 const JUST_COMPLETED_KEY = 'vocab-test-just-completed';
 
 export default function HomeClient({ levels }) {
@@ -278,35 +278,7 @@ export default function HomeClient({ levels }) {
         </div>
       )}
 
-      {/* Pro 소개 바텀 시트 */}
-      {proOpen && (
-        <div
-          className={styles.backdrop}
-          onClick={() => setProOpen(false)}
-        >
-          <div
-            className={styles.sheet}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className={styles.sheetHandle} />
-            <h2 className={styles.sheetTitle}>Pro 플랜</h2>
-            <p className={styles.settingDesc}>Pro로 전환하면 다음 기능을 이용할 수 있어요.</p>
-
-            <ul className={styles.proFeatureList}>
-              {PRO_FEATURES.map((feature) => (
-                <li key={feature} className={styles.proFeatureItem}>
-                  <span className={styles.proFeatureCheck}>✓</span>
-                  {feature}
-                </li>
-              ))}
-            </ul>
-
-            <button className={styles.providerBtn} disabled>
-              Pro로 전환하기 (준비 중)
-            </button>
-          </div>
-        </div>
-      )}
+      <ProSheet open={proOpen} onClose={() => setProOpen(false)} />
     </div>
   );
 }

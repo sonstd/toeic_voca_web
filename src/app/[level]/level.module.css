@@ -27,27 +27,3 @@
   color: var(--color-text-secondary);
   margin: 0 0 24px;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
-  gap: 12px;
-}
-
-.dayCard {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 8px;
-  border-radius: 12px;
-  background: var(--color-surface);
-  color: var(--color-text-primary);
-  font-weight: 600;
-  box-shadow: var(--shadow-card);
-  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.2s ease;
-}
-
-.dayCard:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-card-hover);
-}

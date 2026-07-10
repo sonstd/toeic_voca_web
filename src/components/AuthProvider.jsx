@@ -14,6 +14,9 @@ export function useAuth() {
 export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [plan, setPlan] = useState('free');
+  // 로그인 사용자의 plan을 아직 조회 중인 동안, 접근 제어 로직이 기본값 'free'를
+  // 확정된 값처럼 오판(예: Pro 사용자를 잘못 리다이렉트)하지 않도록 구분해서 노출
+  const [planLoading, setPlanLoading] = useState(true);
 
   useEffect(() => {
     const supabase = createClient();
@@ -26,19 +29,26 @@ export default function AuthProvider({ children }) {
         .eq('id', userId)
         .single();
       setPlan(data?.plan ?? 'free');
+      setPlanLoading(false);
     };
 
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null);
-      if (session?.user) loadPlan(session.user.id);
+      if (session?.user) {
+        loadPlan(session.user.id);
+      } else {
+        setPlanLoading(false);
+      }
     });
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user ?? null);
       if (session?.user) {
+        setPlanLoading(true);
         loadPlan(session.user.id);
       } else {
         setPlan('free');
+        setPlanLoading(false);
       }
     });
 
@@ -51,7 +61,7 @@ export default function AuthProvider({ children }) {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, plan, signOut }}>
+    <AuthContext.Provider value={{ user, plan, planLoading, signOut }}>
       {children}
     </AuthContext.Provider>
   );

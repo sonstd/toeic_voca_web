@@ -18,3 +18,17 @@ export async function fetchTestSessions(supabase) {
   if (error) throw error;
   return data;
 }
+
+export async function hasTestedToday(supabase) {
+  const startOfDay = new Date();
+  startOfDay.setHours(0, 0, 0, 0);
+
+  const { data, error } = await supabase
+    .from('test_sessions')
+    .select('id')
+    .gte('created_at', startOfDay.toISOString())
+    .limit(1);
+
+  if (error) return false; // 테이블 미설정 등으로 실패하면 막지 않음
+  return (data?.length ?? 0) > 0;
+}

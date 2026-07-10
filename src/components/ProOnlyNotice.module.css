@@ -1,0 +1,39 @@
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.message {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.homeLink {
+  margin-top: 8px;
+  padding: 12px 28px;
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-weight: 700;
+  box-shadow: var(--shadow-card);
+}

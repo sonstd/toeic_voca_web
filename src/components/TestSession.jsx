@@ -5,7 +5,8 @@ import { useRouter } from 'next/navigation';
 import { useAuth } from './AuthProvider';
 import { createClient } from '@/lib/supabase/client';
 import { shuffleArray } from '@/lib/shuffle';
-import { saveTestSession } from '@/lib/testSessions';
+import { saveTestSession, hasTestedToday } from '@/lib/testSessions';
+import { isDayUnlocked } from '@/lib/planLimits';
 import wordStyles from './WordLearning.module.css';
 import styles from './TestSession.module.css';
 
@@ -14,7 +15,7 @@ const JUST_COMPLETED_KEY = 'vocab-test-just-completed';
 
 export default function TestSession() {
   const router = useRouter();
-  const { user } = useAuth();
+  const { user, plan, planLoading } = useAuth();
 
   const [phase, setPhase] = useState('loading'); // loading | quiz | done | empty
   const [words, setWords] = useState([]);
@@ -26,13 +27,16 @@ export default function TestSession() {
   const savedRef = useRef(false);
 
   useEffect(() => {
+    if (planLoading) return; // 플랜 확인 전에는 판단을 보류 (Pro 오판 방지)
+
     if (!user) {
       router.replace('/');
       return;
     }
 
     const raw = sessionStorage.getItem(SELECTION_KEY);
-    const selection = raw ? JSON.parse(raw) : [];
+    const rawSelection = raw ? JSON.parse(raw) : [];
+    const selection = rawSelection.filter(({ level, day }) => isDayUnlocked(level, day, plan));
     if (!selection.length) {
       router.replace('/');
       return;
@@ -42,6 +46,14 @@ export default function TestSession() {
     let cancelled = false;
 
     (async () => {
+      if (plan !== 'pro') {
+        const supabase = createClient();
+        if (await hasTestedToday(supabase)) {
+          if (!cancelled) router.replace('/');
+          return;
+        }
+      }
+
       const lists = await Promise.all(
         selection.map(async ({ level, day }) => {
           try {
@@ -63,7 +75,7 @@ export default function TestSession() {
     return () => {
       cancelled = true;
     };
-  }, [user, router]);
+  }, [user, plan, planLoading, router]);
 
   const current = words[index];
 
