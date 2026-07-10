@@ -4,16 +4,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useWordsCache } from './WordsCacheProvider';
 import { useSettings } from './SettingsProvider';
+import { shuffleArray } from '@/lib/shuffle';
 import styles from './WordLearning.module.css';
-
-function shuffleArray(arr) {
-  const result = [...arr];
-  for (let i = result.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [result[i], result[j]] = [result[j], result[i]];
-  }
-  return result;
-}
 
 export default function WordLearning({ level, levelLabel, day, totalDays, initialWords }) {
   const router = useRouter();

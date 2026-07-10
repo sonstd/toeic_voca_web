@@ -1,5 +1,6 @@
 import './globals.css';
 import SettingsProvider from '@/components/SettingsProvider';
+import AuthProvider from '@/components/AuthProvider';
 
 export const metadata = {
   title: '토익 보카',
@@ -20,7 +21,9 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <SettingsProvider>
-          {children}
+          <AuthProvider>
+            {children}
+          </AuthProvider>
         </SettingsProvider>
       </body>
     </html>

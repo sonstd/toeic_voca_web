@@ -1,0 +1,106 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 80px; /* 하단 고정 시작 버튼에 가려지지 않도록 */
+}
+
+.levelGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.levelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.levelLabel {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.selectAllBtn {
+  border: none;
+  background: none;
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dayGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+  gap: 8px;
+}
+
+.dayChip {
+  padding: 10px 0;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+}
+
+.dayChipActive {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-accent-text);
+}
+
+.startBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 12px 24px calc(12px + env(safe-area-inset-bottom));
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.startButton {
+  width: 100%;
+  max-width: 432px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+  font-size: 16px;
+  font-weight: 700;
+  transition: background 0.15s;
+}
+
+.startButton:not(:disabled):hover {
+  background: var(--color-accent-hover);
+}
+
+.loginNotice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.loginNoticeText {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.loginNoticeBtn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+  font-weight: 700;
+}
